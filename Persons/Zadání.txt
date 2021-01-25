@@ -1,0 +1,5 @@
+﻿Napište WPF aplikaci, která bude ukládat do databáze osoby - jejich jméno, příjmení, datum narození a rodné číslo.
+
+Použijte návrhový vzor singleton pro databázi, která bude zjedodušeně realizovaná jako dictionary.
+
+Prozatím napište jenom datovou část - třídu pro ukládání dat jako singleton
