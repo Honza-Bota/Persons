@@ -6,6 +6,7 @@ using System.Text;
 using System.Windows.Input;
 using GalaSoft.MvvmLight.Command;
 using Persons.Model;
+using Persons.Model.Validators;
 
 namespace Persons.ViewModel
 {
@@ -59,9 +60,24 @@ namespace Persons.ViewModel
         }
         #endregion
 
-        private Person Osoba 
+        private Person GetPerson() 
         {
-            get { return new Person(Name, Surname, Birthdate, PersonalIdentificationNumber); }
+            Person p;
+
+            if (Birthdate < new DateTime(1954,1,1))
+            {
+                p = new Person(new NameValidator(), new SurnameValidator(), new BirthdateValidator(), new RCBefore1954Validator());
+            }
+            else
+            {
+                p = new Person(new NameValidator(), new SurnameValidator(), new BirthdateValidator(), new RCAfter1955Validator());
+            }
+
+            bool succes = p.Input(Name,Surname,Birthdate,PersonalIdentificationNumber);
+
+            //if(succes)
+                return p;
+
         }
 
         private static ICommand _clickCommand;
@@ -75,9 +91,9 @@ namespace Persons.ViewModel
                         () =>
                         {
 
-                            Debug.WriteLine(Osoba);
+                            Debug.WriteLine(GetPerson());
 
-                            PersonDatabase.Instance.Add(Osoba);
+                            PersonDatabase.Instance.Add(GetPerson());
 
                             SetValuesToDefault();
                         });
