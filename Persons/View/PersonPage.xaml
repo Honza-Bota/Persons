@@ -5,11 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Persons.View"
         mc:Ignorable="d"
-        Title="Persons" Height="450" Width="800"
+        Title="Persons" Height="320" Width="260"
         WindowStartupLocation="CenterScreen"
         WindowStyle="ToolWindow"
         ResizeMode="NoResize">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <Label Content="Vložení osoby" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold"/>
+        <Label Content="Jméno:" Margin="20,0"/>
+        <TextBox Text="{Binding Name}" Margin="20,0" BorderThickness="1" BorderBrush="LightGray" Background="White"/>
+        <Label Content="Příjmení:" Margin="20,0"/>
+        <TextBox Text="{Binding Surname}" Margin="20,0" BorderThickness="1" BorderBrush="LightGray" Background="White"/>
+        <Label Content="Datum narození:" Margin="20,0"/>
+        <DatePicker Text="{Binding Birthdate}" Margin="20,0" BorderThickness="1" BorderBrush="LightGray" Background="White"/>
+        <Label Content="Rodné číslo:" Margin="20,0"/>
+        <TextBox Text="{Binding PersonalIdentificationNumber}" Margin="20,0" BorderThickness="1" BorderBrush="LightGray" Background="White"/>
+        <Button Content="Vložit" Command="{Binding ClickCommand}" Margin="20" Padding="5" BorderThickness="0" Background="Green" Foreground="White" FontWeight="Bold" Cursor="Hand"  FontSize="20"/>
+
+    </StackPanel>
 </Window>
