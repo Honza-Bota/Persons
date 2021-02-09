@@ -100,7 +100,7 @@ namespace Persons.ViewModel
 
             foreach (KeyValuePair<string,Person> z in PersonDatabase.Instance.GetDatabase())
             {
-                sb.Append(z.Value + "\n");
+                sb.Append("- " + z.Value + "\n");
             }
 
             return sb.ToString();
