@@ -6,13 +6,13 @@ HOTOVO - Napište WPF aplikaci, která bude ukládat do databáze osoby - jejich
 
 HOTOVO - Použijte návrhový vzor singleton pro databázi, která bude zjedodušeně realizovaná jako dictionary.
 
-Použijte dependency injection pro validace jména, příjmení, data narození a rodného čísla. 
+HOTOVO - Použijte dependency injection pro validace jména, příjmení, data narození a rodného čísla. 
 Rodné číslo může být u osob narozených před 1. lednem 1954 ve tvaru cccccc/ccc, 
 u osob narozených po roce 1955 výhradně ve tvaru cccccc/cccc, kde znak c zastupuje číslici.
 
 HOTOVO - Použijte návrhový vzor Model - View - ViewModel pro návrh celkové architektury aplikace.
 
-Vytvořte unit testy pro hlavní funkce programu.
+HOTOVO - Vytvořte unit testy pro hlavní funkce programu.
 
 
 
