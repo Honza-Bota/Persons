@@ -17,7 +17,7 @@
         <Label Content="Příjmení:" Margin="20,0"/>
         <TextBox Text="{Binding Surname}" Margin="20,0" BorderThickness="1" BorderBrush="LightGray" Background="White"/>
         <Label Content="Datum narození:" Margin="20,0"/>
-        <DatePicker SelectedDate="{Binding Birthdate}" Margin="20,0" BorderThickness="1" BorderBrush="LightGray" Background="White" DisplayDateStart="1850-01-01" IsTodayHighlighted="True"/>
+        <DatePicker SelectedDate="{Binding Birthdate}" Margin="20,0" BorderThickness="1" BorderBrush="LightGray" Background="White" DisplayDateStart="1850-01-01" IsTodayHighlighted="True" FirstDayOfWeek="Monday"/>
         <Label Content="Rodné číslo:" Margin="20,0"/>
         <TextBox Text="{Binding PersonalIdentificationNumber}" Margin="20,0" BorderThickness="1" BorderBrush="LightGray" Background="White"/>
         <Button Content="Vložit" Command="{Binding ClickCommand}" Margin="20" Padding="5" BorderThickness="0" Background="Green" Foreground="White" FontWeight="Bold" Cursor="Hand"  FontSize="20"/>

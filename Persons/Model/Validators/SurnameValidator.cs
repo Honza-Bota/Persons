@@ -7,6 +7,6 @@ namespace Persons.Model.Validators
 {
     class SurnameValidator : IStringValidator
     {
-        public bool IsValid(string s) { return s.Length > 1 && !string.IsNullOrEmpty(s); }
+        public bool IsValid(string s) { return (!string.IsNullOrEmpty(s) && s.Length > 1); }
     }
 }

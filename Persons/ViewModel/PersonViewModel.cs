@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Text;
+using System.Windows;
 using System.Windows.Input;
 using GalaSoft.MvvmLight.Command;
 using Persons.Model;
@@ -37,7 +38,7 @@ namespace Persons.ViewModel
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Surname)));
             }
         }
-        private DateTime birthdate;
+        private DateTime birthdate = new DateTime(2000,1,1);
         public DateTime Birthdate
         {
             get { return birthdate; }
@@ -75,8 +76,9 @@ namespace Persons.ViewModel
 
             bool succes = p.Input(Name,Surname,Birthdate,PersonalIdentificationNumber);
 
-            //if(succes)
+            if (succes)
                 return p;
+            else return null;
 
         }
 
@@ -90,12 +92,18 @@ namespace Persons.ViewModel
                     _clickCommand = new RelayCommand(
                         () =>
                         {
+                            Person p = GetPerson();
 
-                            Debug.WriteLine(GetPerson());
+                            if (p != null)
+                            {
+                                Debug.WriteLine(p);
 
-                            PersonDatabase.Instance.Add(GetPerson());
+                                PersonDatabase.Instance.Add(p);
 
-                            SetValuesToDefault();
+                                SetValuesToDefault();
+                            }
+
+                            else MessageBox.Show("Byl zadán neplatný vstup!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                         });
                 }
                 return _clickCommand;

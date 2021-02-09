@@ -12,7 +12,7 @@ namespace Persons.Model.Validators
 
         public bool IsValid(string s)
         {
-            if (r.IsMatch(s))
+            if (!string.IsNullOrEmpty(s) && r.IsMatch(s))
             {
                 return true;
             }
