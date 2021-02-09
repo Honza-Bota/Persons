@@ -23,5 +23,10 @@ namespace Persons.Model
         {
 
         }
+
+        public override string ToString()
+        {
+            return $"{Name} {Surname} - {Birthdate}";
+        }
     }
 }
