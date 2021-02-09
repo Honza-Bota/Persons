@@ -13,10 +13,10 @@ namespace Persons.Model
 
         public Person(string name, string surname, DateTime birthdate, string personalIdentificationNumber)
         {
-            Name = name ?? throw new ArgumentNullException(nameof(name));
-            Surname = surname ?? throw new ArgumentNullException(nameof(surname));
+            Name = name;
+            Surname = surname;
             Birthdate = birthdate;
-            PersonalIdentificationNumber = personalIdentificationNumber ?? throw new ArgumentNullException(nameof(personalIdentificationNumber));
+            PersonalIdentificationNumber = personalIdentificationNumber;
         }
 
         public Person()
@@ -26,7 +26,7 @@ namespace Persons.Model
 
         public override string ToString()
         {
-            return $"{Name} {Surname} - {Birthdate}";
+            return $"{Name} {Surname} - {Birthdate.ToShortDateString()} - {PersonalIdentificationNumber}";
         }
     }
 }

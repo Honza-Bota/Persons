@@ -2,21 +2,21 @@
 Termín: 11. únor 2021 23:59Uzávěrka: 15. únor 2021 23:59
 Pokyny:
 
-Napište WPF aplikaci, která bude ukládat do databáze osoby - jejich jméno, příjmení, datum narození a rodné číslo.
+HOTOVO - Napište WPF aplikaci, která bude ukládat do databáze osoby - jejich jméno, příjmení, datum narození a rodné číslo.
 
-Použijte návrhový vzor singleton pro databázi, která bude zjedodušeně realizovaná jako dictionary.
+HOTOVO - Použijte návrhový vzor singleton pro databázi, která bude zjedodušeně realizovaná jako dictionary.
 
 Použijte dependency injection pro validace jména, příjmení, data narození a rodného čísla. 
 Rodné číslo může být u osob narozených před 1. lednem 1954 ve tvaru cccccc/ccc, 
 u osob narozených po roce 1955 výhradně ve tvaru cccccc/cccc, kde znak c zastupuje číslici.
 
-Použijte návrhový vzor Model - View - ViewModel pro návrh celkové architektury aplikace.
+HOTOVO - Použijte návrhový vzor Model - View - ViewModel pro návrh celkové architektury aplikace.
 
 Vytvořte unit testy pro hlavní funkce programu.
 
 
 
-______________________________________________________________
+_____________________________ HOTOVO _________________________________
 Napište WPF aplikaci, která bude ukládat do databáze osoby - jejich jméno, příjmení, datum narození a rodné číslo.
 
 Použijte návrhový vzor singleton pro databázi, která bude zjedodušeně realizovaná jako dictionary.
