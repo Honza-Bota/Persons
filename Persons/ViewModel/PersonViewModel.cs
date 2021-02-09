@@ -86,6 +86,7 @@ namespace Persons.ViewModel
             }
         }
 
+
         private void SetValuesToDefault()
         {
             Name = "";

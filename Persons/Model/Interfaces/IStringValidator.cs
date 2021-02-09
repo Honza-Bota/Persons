@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Persons.Interfaces
+namespace Persons.Model.Interfaces
 {
     interface IStringValidator
     {
