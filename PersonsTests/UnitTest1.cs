@@ -13,7 +13,7 @@ namespace PersonsTests
         [TestMethod]
         public void TestMethod1()
         {
-           // // Arrange
+           // // Arrange 
            // string testMessage = "Unit test zprava"; Persons.
            // ZpravaModel z = ZpravaModel.ZpravaDatabase;
            // ZpravaViewModel zvm = new ZpravaViewModel { Zprava = testMessage };
