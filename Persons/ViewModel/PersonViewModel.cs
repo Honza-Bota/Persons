@@ -11,7 +11,7 @@ using Persons.Model.Validators;
 
 namespace Persons.ViewModel
 {
-    class PersonViewModel : INotifyPropertyChanged
+    public class PersonViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace Persons.Model.Validators
 {
-    class RCAfter1955Validator : IStringValidator
+    public class RCAfter1955Validator : IStringValidator
     {
         Regex r = new Regex("^[0-9]{6}/[0-9]{4}$");
 

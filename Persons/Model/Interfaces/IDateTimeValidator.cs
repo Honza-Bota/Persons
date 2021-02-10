@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Persons.Model.Interfaces
 {
-    interface IDateTimeValidator
+    public interface IDateTimeValidator
     {
         bool IsValid(DateTime d);
 

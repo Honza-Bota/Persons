@@ -5,7 +5,7 @@ using Persons.Model.Interfaces;
 
 namespace Persons.Model.Validators
 {
-    class BirthdateValidator : IDateTimeValidator
+    public class BirthdateValidator : IDateTimeValidator
     {
         public bool IsValid(DateTime d)
         {

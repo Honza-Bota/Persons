@@ -5,7 +5,7 @@ using Persons.Model.Interfaces;
 
 namespace Persons.Model
 {
-    class Person
+    public class Person
     {
         readonly IStringValidator nameValidator;
         readonly IStringValidator surnameValidator;

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Persons.Model
 {
-    class PersonDatabase
+    public class PersonDatabase
     {
         //------------------------------------Tvorba databáze---------------------------------------------
         //samotné úložiště dat

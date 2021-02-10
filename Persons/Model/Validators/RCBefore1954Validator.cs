@@ -6,7 +6,7 @@ using Persons.Model.Interfaces;
 
 namespace Persons.Model.Validators
 {
-    class RCBefore1954Validator : IStringValidator
+    public class RCBefore1954Validator : IStringValidator
     {
         Regex r = new Regex("^[0-9]{6}/[0-9]{3}$");
 

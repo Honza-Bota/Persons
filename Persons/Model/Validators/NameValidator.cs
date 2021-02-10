@@ -5,7 +5,7 @@ using Persons.Model.Interfaces;
 
 namespace Persons.Model.Validators
 {
-    class NameValidator : IStringValidator
+    public class NameValidator : IStringValidator
     {
         public bool IsValid(string s) { return (!string.IsNullOrEmpty(s) && s.Length > 1); }
     }

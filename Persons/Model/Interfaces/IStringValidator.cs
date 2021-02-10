@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Persons.Model.Interfaces
 {
-    interface IStringValidator
+    public interface IStringValidator
     {
         bool IsValid(string s);
 
